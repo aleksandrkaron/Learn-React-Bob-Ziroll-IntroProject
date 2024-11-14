@@ -7,19 +7,39 @@
 }
 
 /* Basic CSS */
+
+/* global */
 body {
-  max-width: 500px;
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #758694;
+  color: #FFF8F3;
+  margin: 0;
 }
 
-.logo {
-  width: 100px;
+h1 {
+  margin: 0;
 }
 
+header {
+  background-color: #405D72;
+}
+
+.text-emphasis {
+  font-weight: bold;
+  color: #F7E7DC;
+}
+
+/* nav-bar */
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
+}
+
+.nav-logo {
+  width: 100px;
 }
 
 .nav-items {
@@ -29,6 +49,25 @@ body {
 
 .nav-items > li {
   padding: 10px;
+}
+
+/* main-content */
+.main-content {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #405D72;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {

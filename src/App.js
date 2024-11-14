@@ -5,7 +5,7 @@ function Header() {
   return (
       <header>
           <nav className="nav">
-              <img src={logo} alt="React logo" className="logo" />
+              <img src={logo} alt="React logo" className="nav-logo" />
               <ul className="nav-items">
                   <li>Pricing</li>
                   <li>About</li>
@@ -18,12 +18,12 @@ function Header() {
 
 function MainContent() {
   return (
-      <div>
+      <div className="main-content">
           <h1>Reasons I'm excited to learn React</h1>
           <ol>
-              <li>It's a popular library, so I'll be 
+              <li>It's a <span className="text-emphasis">popular</span> library, so I'll be 
               able to fit in with the cool kids!</li>
-              <li>I'm more likely to get a job as a developer
+              <li>I'm more likely to get a <span className="text-emphasis">job</span> as a developer
               if I know React</li>
           </ol>
       </div>
@@ -32,7 +32,7 @@ function MainContent() {
 
 function Footer() {
   return (
-      <footer>
+      <footer className="footer">
           <small>© 2024 Caron development. All rights reserved.</small>
       </footer>
   )
