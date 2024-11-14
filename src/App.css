@@ -3,8 +3,32 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+}
+
+/* Basic CSS */
+body {
+  max-width: 500px;
+  padding: 10px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+}
+
+.nav-items > li {
+  padding: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
